@@ -1,0 +1,580 @@
+/* $Id: style.css,v 1.23 2007/12/17 15:05:09 goba Exp $ */
+
+/*
+** HTML elements
+*/
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font: 80% Verdana;
+  text-align: center;
+
+      /* you can put in a single background for browsers that don't support it */
+    /*background: url("oiseau.jpg") top right no-repeat;
+     */
+    /* example using background short hand property */
+    /*background: url("plantes.jpg") bottom left no-repeat,
+				url("oiseau.jpg") top right no-repeat;
+  */
+ /* background-image:url('plantes.jpg')*/
+}
+
+
+tr.odd td, tr.even td {
+  padding: 0.3em;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  color: #222;
+}
+h1 {
+  font-size: 1.7em;
+}
+h2 {
+  font-size: 1.3em;
+}
+h3, h4, h5, h6 {
+  font-size: 1.1em;
+}
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.9em;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:link {
+  color: #368313;   /*  OLD : #006E87  */
+}
+a:visited {
+  color: #368313;
+}
+a:hover {
+  color: #57b22d;    /* --#39c;---- */
+  /*text-decoration: underline;*/
+}
+fieldset {
+  border: 1px solid #ccc;
+}
+pre {
+  background-color: #eee;
+  padding: 0.75em 1.5em;
+  font-size: 12px;
+  border: 1px solid #ddd;
+}
+table {
+  /* make <td> sizes relative to body size! */
+  font-size: 1em;
+}
+.form-item label {
+  font-size: 1em;
+  color: #222;
+}
+.item-list .title {
+  font-size: 1em;
+  color: #222;
+}
+.links {
+  margin-bottom: 0;
+}
+.comment .links {
+  margin-bottom: 0;
+}
+
+/*
+** Page layout blocks / IDs
+*/
+
+#header {
+  border-width: 2px 2px 0px 2px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  height: 175px;
+  width: 1035px;
+  margin-top: 10px;
+}
+
+#logo {
+  vertical-align: top;
+  text-align: left;
+ /* padding: 15px;*/
+  padding: 0;
+  border: 0;
+}
+#logo h1 {
+	margin: 0;
+}
+#logo img {
+  float: right; /* LTR */
+  padding: 0;
+  border: 0;
+}
+#menu {
+  padding: 0.5em 0.5em 0 0.5em; /* LTR */
+  /*background-color: #39c;*/    
+  text-align: right; /* LTR */
+  vertical-align: middle;
+}
+
+
+#navlist {
+  font-size: 1.0em;
+  padding: 0 0.8em 1.2em 0; /* LTR */
+  color: #39c;
+}
+
+#navlist a {
+  font-weight: bold;
+  color: #fff;
+}
+#subnavlist {
+  padding: 0.5em 1.2em 0.4em 0; /* LTR */
+  font-size: 0.8em;
+  color: #39c;
+}
+#subnavlist a {
+  font-weight: bold;
+  color: #9cf;
+}
+ul.links li {
+  border-left: 1px solid #9cf; /* LTR */
+}
+ul.links li.first {
+  border: none;
+}
+#search .form-text, #search .form-submit {
+  border: 1px solid #369;
+  font-size: 1.1em;
+  height: 1.5em;
+  vertical-align: middle;
+}
+#search .form-text {
+  width: 8em;
+  padding: 0 0.5em;
+}
+#mission {
+  /*background-color: #369;*/
+  padding: 1.5em 2em;
+  color: #fff;
+}
+}
+#mission a, #mission a:visited {
+  color: #9cf;
+  font-weight: bold;
+}
+.site-name {
+  margin: 0.6em 0 0 ;
+  padding: 0;
+  font-size: 2em;
+}
+.site-name a:link, .site-name a:visited {
+  color: #fff;
+}
+.site-name a:hover {
+  color: #369;
+  text-decoration: none;
+}
+.site-slogan {
+  font-size: 1em;
+  color: #eee;
+  display: block;
+  margin: 0;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#content {
+  border-width: 2px 0px 0px 2px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  width: 1024px;
+  margin-bottom: 10px;
+}
+
+#main {
+  /* padding in px not ex because IE messes up 100% width tables otherwise */
+  /*background-color: #fff;*/
+  text-align: left;
+  padding: 10px;
+  width: 789px;
+}
+#mission, .node .content, .comment .content {
+  line-height: 1.4em;
+  }
+#help {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+.breadcrumb {
+  margin-bottom: .5em;
+}
+.messages {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.3em;
+  margin-bottom: 1em;
+}
+.error {
+  border-color: red;
+}
+#sidebar-left, #sidebar-right {
+  /*width: 16em;*/
+  width: 200px;
+  margin-right: 0px;
+  /* padding in px not ex because IE messes up 100% width tables otherwise */
+  padding: 10px;
+  vertical-align: top;
+  border-width: 0px 2px 0px 2px;
+  border-style: solid;
+  border-color: #e6e6e6;
+}
+#partanaire_sidebar {
+  padding-bottom: 0px;
+  position : absolute;
+  bottom: 0;
+  vertical-align : bottom;
+}
+#footer {
+  width: 1024px;
+  font-size: 0.8em;
+  margin-left: 10%;
+  border-width: 0px 2px 2px 2px;
+  border-style: solid;
+  border-color: #e6e6e6;
+}
+
+
+
+/*
+** Common declarations for child classes of node, comment, block, box, etc.
+** If you want any of them styled differently for a specific parent, add
+** additional rules /with only the differing properties!/ to .parent .class.
+** See .comment .title for an example.
+*/
+.title, .title a {
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #28550a;
+  margin: 0 auto;  /* decrease default margins for h<x>.title */
+}
+
+.submitted {
+  color: #999;
+  font-size: 0.8em;
+}
+.links {
+  color: #999;
+}
+.links a {
+  font-weight: bold;
+}
+.block, .box {
+  padding: 0 0 1.5em 0; /* LTR */
+  text-align: left;
+}
+.block {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 0.75em;
+  margin-bottom: 1.5em;
+}
+.block .title {
+  margin-bottom: .25em;
+}
+.box .title {
+  font-size: 1.1em;
+}
+.node {
+  margin: .5em 0 2em; /* LTR */
+}
+.sticky {
+  padding: .5em;
+  background-color: #eee;
+  border: solid 1px #ddd;
+}
+.node .content, .comment .content {
+  /*background-color: #fff;*/
+  margin: .5em 0 .5em;
+}
+.node .taxonomy {
+  color: #999;
+  font-size: 0.8em;
+  padding-left: 1.5em; /* LTR */
+}
+.node .picture {
+  border: 1px solid #ddd;
+  float: right; /* LTR */
+  margin: 0.5em;
+}
+.comment {
+  border: 1px solid #abc;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+.comment .title a {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+.comment .new {
+  text-align: right; /* LTR */
+  font-weight: bold;
+  font-size: 0.8em;
+  float: right; /* LTR */
+  color: red;
+}
+.comment .picture {
+  border: 1px solid #abc;
+  float: right; /* LTR */
+  margin: 0.5em;
+}
+
+/*
+** Module specific styles
+*/
+#aggregator .feed-source {
+ /* background-color: #eee;*/
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin: 1em 0;
+}
+#aggregator .news-item .categories, #aggregator .source, #aggregator .age {
+  color: #999;
+  font-style: italic;
+  font-size: 0.9em;
+}
+#aggregator .title {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+#aggregator h3 {
+  margin-top: 1em;
+}
+#forum table {
+  width: 100%;
+}
+#forum td {
+  padding: 0.5em;
+}
+#forum td.forum, #forum td.posts {
+  background-color: #eee;
+}
+#forum td.topics, #forum td.last-reply {
+  background-color: #ddd;
+}
+#forum td.container {
+  background-color: #ccc;
+}
+#forum td.container a {
+  color: #555;
+}
+#forum td.statistics, #forum td.settings, #forum td.pager {
+  height: 1.5em;
+  border: 1px solid #bbb;
+}
+#forum td .name {
+  color: #96c;
+}
+#forum td .links {
+  padding-top: 0.7em;
+  font-size: 0.9em;
+}
+#profile .profile {
+  clear: both;
+  border: 1px solid #abc;
+  padding: .5em;
+  margin: 1em 0em;
+}
+#profile .profile .name {
+  padding-bottom: 0.5em;
+}
+.block-forum h3 {
+  margin-bottom: .5em;
+}
+div.admin-panel .description {
+  color: #999;
+}
+div.admin-panel .body {
+  background: #f4f4f4;
+}
+div.admin-panel h3 {
+  background-color: #69c;
+  color: #fff;
+  padding: 5px 8px 5px;
+  margin: 0;
+}
+
+.block {
+  border-bottom: 0px;
+}
+
+ul.nice-menu li {
+  border: 0px;
+  background-color: #FFFFFF;   
+  font-size: 15px;
+}
+
+ul.nice-menu ul {
+  border: none;
+}
+
+ul.nice-menu ul li {
+  width: 22em;
+}
+
+ul.nice-menu-down li ul li ul {
+  left:22em;
+}
+
+/* Overrides for Garland header. */
+#header-region ul.nice-menu li {
+  background: #FFFFFF;
+}
+
+ul.nice-menu a {
+  color: #368313; /* OLD : #006E87;     */
+  font-weight: normal;
+  white-space: nowrap;
+
+}
+
+
+ul.nice-menu a:hover {
+  text-decoration: none;
+  color: #57b22d;    
+}
+
+/* Menu niveau 1 avec fils*/
+ul.nice-menu-down li.menuparent,
+/* Repeat for Garland header. */
+#header-region ul.nice-menu-down li.menuparent {
+  background: #FFFFFF  url("arrow-down.png") right center no-repeat;  
+}
+
+/* Menu niveau 1 sans fils hover*/
+ul.nice-menu-down li:hover {
+  background: #FFFFFF ;                        
+}
+
+/* Menu niveau 1 avec fils hover */                            
+ul.nice-menu-down li.menuparent:hover,
+ul.nice-menu-down li.over,
+/* Repeat for Garland header. */
+#header-region ul.nice-menu-down li.menuparent:hover,
+#header-region ul.nice-menu-down li.over  {
+  background: #FFFFFF url("arrow-down.png") right center no-repeat;
+}
+
+
+/* Menu niveau niveau 2 avec fils*/																
+ul.nice-menu-down li li.menuparent,
+/* Repeat for Garland header. */
+#header-region ul.nice-menu-down li li.menuparent {
+  background: #FFFFFF url("arrow-right.png") right center no-repeat; 
+}
+
+ul.nice-menu-down li li.menuparent:hover,
+ul.nice-menu-down li li.over,
+/* Repeat for Garland header. */
+#header-region ul.nice-menu-down li li.menuparent:hover,
+#header-region ul.nice-menu-down li li.over {
+  background: #FFFFFF url("arrow-right.png") right center no-repeat;
+}
+
+ul.nice-menu ul {
+  font-size: 15px;
+}
+
+body.mceContentBody,
+td.content {
+	text-align: left;
+	/*background: white;*/
+}
+
+#user-login-form {
+  text-align:left;
+}
+
+/*td.info {
+  text-align:left;
+}*/
+
+.block-nice_menus{
+border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  border-color: #e6e6e6;
+}
+
+tbody {
+  border: 0;
+}
+
+table.courselist tbody {
+  border: 0;
+}
+table.courselist tr td {
+  vertical-align: top;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
+table.courselist tr:nth-child(even) { background-color: #F0F0F0 }
+table.courselist tr:nth-child(odd) { background-color: #E7E7E7 }
+table.courselist tr:hover { background-color: #d0ffd0; }
+
+table.coursedetail tbody {
+  border: 0;
+}
+table.coursedetail tr td {
+  vertical-align: top;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+table.coursedetail th { background-color: #e7e7e7; }
+table.coursedetail td { background-color: #f0f0f0; }
+
+table.subscription {
+  margin-left: 20px;
+}
+
+table.subscription td {
+  vertical-align: top;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.print_html {
+  float: right;
+  margin-top: -2em;
+}
+
+.print_pdf {
+  float: right;
+  margin-top: -2em;
+  margin-right: 2em;
+}
+
+.more-help-link {
+  margin-top: 2em;
+}
+
+td.content li {
+  margin-bottom: 0px;
+}
+
+div.block-freya li {
+  margin-bottom: 10px;
+}
+
+
+
+tbody th {
+  vertical-align: top;
+  border-bottom: 0;
+}
+
+a.remove {
+  color: #E00;
+}

@@ -1,0 +1,1 @@
+Drupal.locale = { 'pluralFormula': function($n) { return Number(($n!=1)); }, 'strings': { "An error occurred at @path.": "Ein Fehler ist auf @path aufgetreten.", "jQuery UI Tabs: Not enough arguments to add tab.": "jQuery UI-Reiter: Nicht genug Argumente, um einen Reiter hinzuzufügen.", "Upload": "Upload" } };
